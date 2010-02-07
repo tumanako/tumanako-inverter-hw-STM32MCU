@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat Feb  6 02:31:07 2010
+EESchema Schematic File Version 2  date Sun Feb  7 18:39:19 2010
 LIBS:power
 LIBS:STM32MCU
 LIBS:device
@@ -36,7 +36,7 @@ EELAYER END
 $Descr A4 11700 8267
 Sheet 3 5
 Title ""
-Date ""
+Date "7 feb 2010"
 Rev ""
 Comp ""
 Comment1 ""
