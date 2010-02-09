@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun Feb  7 18:39:19 2010
+EESchema Schematic File Version 2  date Tue Feb  9 23:03:57 2010
 LIBS:power
 LIBS:STM32MCU
 LIBS:device
