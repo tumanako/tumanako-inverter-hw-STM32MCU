@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue Feb  9 23:03:57 2010
+EESchema Schematic File Version 2  date Sun Feb 14 14:04:07 2010
 LIBS:power
 LIBS:STM32MCU
 LIBS:device
@@ -30,6 +30,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:STM32MCUsch
 LIBS:STM32MCU-cache
 EELAYER 24  0
 EELAYER END
@@ -44,6 +45,32 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 4500 2050
+Wire Wire Line
+	4250 2050 5450 2050
+Wire Wire Line
+	4250 2050 4250 2000
+Wire Wire Line
+	5300 1550 4900 1550
+Wire Wire Line
+	5450 2050 5450 2100
+Wire Wire Line
+	4900 1550 4900 1600
+Wire Wire Line
+	4500 2050 4500 2000
+Wire Wire Line
+	4900 2000 4900 2050
+Connection ~ 4900 2050
+Wire Wire Line
+	5450 1300 5450 1250
+Connection ~ 4900 1250
+Wire Wire Line
+	4900 1200 4900 1250
+Connection ~ 5250 750 
+Wire Wire Line
+	5250 800  5250 750 
+Wire Wire Line
+	4500 800  4500 750 
 Wire Wire Line
 	9950 1700 9050 1700
 Wire Wire Line
@@ -400,6 +427,139 @@ Wire Wire Line
 	9050 900  9950 900 
 Wire Wire Line
 	9050 1500 9950 1500
+Wire Wire Line
+	4500 750  5450 750 
+Wire Wire Line
+	4900 750  4900 800 
+Connection ~ 4900 750 
+Wire Wire Line
+	5450 1250 4500 1250
+Wire Wire Line
+	4500 1250 4500 1200
+Wire Wire Line
+	5250 1200 5250 1250
+Connection ~ 5250 1250
+Wire Wire Line
+	4500 1550 4500 1600
+Wire Wire Line
+	5200 2000 5200 2050
+Connection ~ 5200 2050
+Wire Wire Line
+	5200 1600 5200 1550
+Connection ~ 5200 1550
+Wire Wire Line
+	4600 1550 4250 1550
+Wire Wire Line
+	4250 1550 4250 1600
+Connection ~ 4500 1550
+$Comp
+L CP C?
+U 1 1 4B774A00
+P 4250 1800
+F 0 "C?" H 4300 1900 50  0000 L CNN
+F 1 "CP" H 4300 1700 50  0000 L CNN
+	1    4250 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 4B7749D8
+P 5200 1800
+F 0 "C?" H 5250 1900 50  0000 L CNN
+F 1 "CAPAPOL" H 5250 1700 50  0000 L CNN
+	1    5200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L DGND #PWR?
+U 1 1 4B774986
+P 5450 2100
+F 0 "#PWR?" H 5450 2100 40  0001 C CNN
+F 1 "DGND" H 5450 2030 40  0000 C CNN
+	1    5450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +15V #PWR?
+U 1 1 4B774954
+P 5450 1550
+F 0 "#PWR?" H 5500 1500 20  0001 C CNN
+F 1 "+15V" H 5450 1650 30  0000 C CNN
+	1    5450 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L +24V #PWR?
+U 1 1 4B774953
+P 4600 1550
+F 0 "#PWR?" H 4600 1500 20  0001 C CNN
+F 1 "+24V" H 4600 1650 30  0000 C CNN
+	1    4600 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 4B77494A
+P 4900 1800
+F 0 "C?" H 4950 1900 50  0000 L CNN
+F 1 "C" H 4950 1700 50  0000 L CNN
+	1    4900 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4B774949
+P 4500 1800
+F 0 "C?" H 4550 1900 50  0000 L CNN
+F 1 "C" H 4550 1700 50  0000 L CNN
+	1    4500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L DGND #PWR?
+U 1 1 4B7748DC
+P 5450 1300
+F 0 "#PWR?" H 5450 1300 40  0001 C CNN
+F 1 "DGND" H 5450 1230 40  0000 C CNN
+	1    5450 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +15V #PWR?
+U 1 1 4B7748A6
+P 5450 600
+F 0 "#PWR?" H 5500 550 20  0001 C CNN
+F 1 "+15V" H 5450 700 30  0000 C CNN
+	1    5450 600 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4B774899
+P 4500 1000
+F 0 "C?" H 4550 1100 50  0000 L CNN
+F 1 "C" H 4550 900 50  0000 L CNN
+	1    4500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4B774898
+P 4900 1000
+F 0 "C?" H 4950 1100 50  0000 L CNN
+F 1 "C" H 4950 900 50  0000 L CNN
+	1    4900 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4B774897
+P 5250 1000
+F 0 "C?" H 5300 1100 50  0000 L CNN
+F 1 "C" H 5300 900 50  0000 L CNN
+	1    5250 1000
+	1    0    0    -1  
+$EndComp
 Text Label 9050 900  0    60   ~ 0
 IA_ERR_10V
 Text Label 9050 1500 0    60   ~ 0
@@ -947,11 +1107,11 @@ $EndComp
 $Comp
 L +15V #PWR15
 U 1 1 4AEB7736
-P 9750 5900
-F 0 "#PWR15" H 9800 5850 20  0001 C CNN
-F 1 "+15V" H 9750 6000 30  0000 C CNN
-	1    9750 5900
-	1    0    0    -1  
+P 9600 5900
+F 0 "#PWR15" H 9650 5850 20  0001 C CNN
+F 1 "+15V" H 9600 6000 30  0000 C CNN
+	1    9600 5900
+	0    -1   -1   0   
 $EndComp
 $Comp
 L +24V #PWR14
@@ -974,19 +1134,19 @@ $EndComp
 $Comp
 L +15V #PWR5
 U 1 1 4AEB687D
-P 9750 2300
-F 0 "#PWR5" H 9800 2250 20  0001 C CNN
-F 1 "+15V" H 9750 2400 30  0000 C CNN
-	1    9750 2300
-	1    0    0    -1  
+P 9600 2300
+F 0 "#PWR5" H 9650 2250 20  0001 C CNN
+F 1 "+15V" H 9600 2400 30  0000 C CNN
+	1    9600 2300
+	0    -1   -1   0   
 $EndComp
 $Comp
 L +15V #PWR1
 U 1 1 4AEB6834
-P 7100 750
-F 0 "#PWR1" H 7150 700 20  0001 C CNN
-F 1 "+15V" H 7100 850 30  0000 C CNN
-	1    7100 750 
+P 7100 600
+F 0 "#PWR1" H 7150 550 20  0001 C CNN
+F 1 "+15V" H 7100 700 30  0000 C CNN
+	1    7100 600 
 	1    0    0    -1  
 $EndComp
 $Comp
