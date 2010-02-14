@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun Feb 14 14:04:07 2010
+EESchema Schematic File Version 2  date Sun Feb 14 23:24:34 2010
 LIBS:power
 LIBS:STM32MCU
 LIBS:device
@@ -35,7 +35,7 @@ LIBS:STM32MCU-cache
 EELAYER 24  0
 EELAYER END
 $Descr A4 11700 8267
-Sheet 4 5
+Sheet 4 7
 Title "STM32 CONNECTIONS"
 Date "7 feb 2010"
 Rev "_A"

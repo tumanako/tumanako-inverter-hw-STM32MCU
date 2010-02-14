@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun Feb 14 14:04:07 2010
+EESchema Schematic File Version 2  date Sun Feb 14 23:24:34 2010
 LIBS:power
 LIBS:STM32MCU
 LIBS:device
@@ -35,7 +35,7 @@ LIBS:STM32MCU-cache
 EELAYER 24  0
 EELAYER END
 $Descr A4 11700 8267
-Sheet 3 5
+Sheet 5 7
 Title ""
 Date "7 feb 2010"
 Rev ""
@@ -45,240 +45,155 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Connection ~ 2050 3900
+Text GLabel 5750 2200 0    60   BiDi ~ 0
+CAN_H
+Text GLabel 5750 2350 0    60   BiDi ~ 0
+CAN_L
+Connection ~ 10250 6050
 Wire Wire Line
-	1900 3900 2050 3900
+	10100 6050 10400 6050
 Wire Wire Line
-	2050 3900 2250 3900
+	10250 6350 10250 6450
 Wire Wire Line
-	2750 4000 2750 3900
+	10250 6450 10400 6450
 Wire Wire Line
-	2750 3900 2500 3900
+	10200 6150 10400 6150
+Connection ~ 10250 5650
 Wire Wire Line
-	2500 3900 2250 5700
+	10250 6050 10250 3950
+Connection ~ 10250 4850
 Wire Wire Line
-	2050 5700 2050 5600
-Wire Notes Line
-	950  5850 950  3450
-Wire Notes Line
-	950  5850 3900 5850
-Wire Notes Line
-	3900 5850 3900 3450
-Wire Notes Line
-	3900 3450 950  3450
+	10250 5250 10400 5250
 Wire Wire Line
-	3000 4800 2900 4800
+	10400 4450 10250 4450
 Wire Wire Line
-	2050 5050 2050 5100
+	10250 3950 10400 3950
 Wire Wire Line
-	2050 4500 2050 4550
+	10100 4950 10400 4950
 Wire Wire Line
-	2750 5100 2750 5050
+	10400 5150 10100 5150
 Wire Wire Line
-	2750 4550 2750 4500
-Wire Notes Line
-	950  3150 950  750 
-Wire Notes Line
-	950  3150 3900 3150
-Wire Notes Line
-	3900 3150 3900 750 
-Wire Notes Line
-	3900 750  950  750 
+	10100 5350 10400 5350
 Wire Wire Line
-	2850 2100 2750 2100
+	10400 5550 10100 5550
 Wire Wire Line
-	1250 2350 1250 2400
+	10400 5850 10100 5850
 Wire Wire Line
-	1250 1800 1250 1850
+	10400 4650 10100 4650
 Wire Wire Line
-	1500 2100 1400 2100
+	10400 4350 10100 4350
 Wire Wire Line
-	2600 2400 2600 2350
+	10400 4150 10100 4150
 Wire Wire Line
-	2600 1850 2600 1800
+	10400 3850 10100 3850
 Wire Wire Line
-	2250 5700 2050 5700
+	10400 3650 10100 3650
 Wire Wire Line
-	2050 5700 1900 5700
-Connection ~ 2050 5700
+	10100 3550 10400 3550
 Wire Wire Line
-	2750 5600 2750 5700
+	10400 3750 10100 3750
 Wire Wire Line
-	2750 5700 2500 5700
+	10100 4050 10400 4050
 Wire Wire Line
-	2500 5700 2250 3900
+	10100 4250 10400 4250
 Wire Wire Line
-	2050 3900 2050 4000
+	10100 4550 10400 4550
+Wire Wire Line
+	10100 5950 10400 5950
+Wire Wire Line
+	10100 5750 10400 5750
+Wire Wire Line
+	10400 5450 10100 5450
+Wire Wire Line
+	10100 5050 10400 5050
+Wire Wire Line
+	10400 4750 10100 4750
+Wire Wire Line
+	10250 4850 10400 4850
+Connection ~ 10250 4450
+Wire Wire Line
+	10250 5650 10400 5650
+Connection ~ 10250 5250
+Wire Wire Line
+	10400 6250 10250 6250
+Wire Wire Line
+	10250 6250 10250 6150
+Connection ~ 10250 6150
+Wire Wire Line
+	10200 6350 10400 6350
+Connection ~ 10250 6350
 $Comp
-L R R?
-U 1 1 4A7BE180
-P 2750 5350
-F 0 "R?" H 2600 5350 50  0000 C CNN
-F 1 "R" V 2750 5350 50  0001 C CNN
-	1    2750 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 4A7BE17F
-P 3250 4800
-F 0 "R?" V 3330 4800 50  0000 C CNN
-F 1 "R" V 3250 4800 50  0001 C CNN
-	1    3250 4800
+L DGND #PWR?
+U 1 1 4B77680A
+P 10100 6050
+F 0 "#PWR?" H 10100 6050 40  0001 C CNN
+F 1 "DGND" H 10100 5980 40  0000 C CNN
+	1    10100 6050
 	0    1    1    0   
 $EndComp
 $Comp
-L POT RV?
-U 1 1 4A7BE17E
-P 2750 4800
-F 0 "RV?" V 2750 4650 50  0000 C CNN
-F 1 "POT" H 2750 4800 50  0001 C CNN
-	1    2750 4800
-	0    1    1    0   
-$EndComp
-$Comp
-L R R?
-U 1 1 4A7BE17D
-P 2750 4250
-F 0 "R?" H 2600 4250 50  0000 C CNN
-F 1 "R" V 2750 4250 50  0001 C CNN
-	1    2750 4250
+L CONN_30 P?
+U 1 1 4B776671
+P 10750 5000
+F 0 "P?" V 10701 5000 60  0000 C CNN
+F 1 "CONN_30" V 10800 5000 60  0000 C CNN
+	1    10750 5000
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R?
-U 1 1 4A7BE17C
-P 2050 5350
-F 0 "R?" H 1900 5350 50  0000 C CNN
-F 1 "R" V 2050 5350 50  0001 C CNN
-	1    2050 5350
-	1    0    0    -1  
-$EndComp
-Text Notes 1150 4650 0    60   ~ 0
-(Vout+)
-Text Notes 3200 4700 0    60   ~ 0
-(Vout-)
-Text Notes 1500 5750 0    60   ~ 0
-(-15V)
-Text Notes 1500 3950 0    60   ~ 0
-(+15V)
-$Comp
-L R R?
-U 1 1 4A7BE17B
-P 1600 4800
-F 0 "R?" V 1680 4800 50  0000 C CNN
-F 1 "R" V 1600 4800 50  0001 C CNN
-	1    1600 4800
-	0    1    1    0   
-$EndComp
-$Comp
-L R R?
-U 1 1 4A7BE17A
-P 2050 4250
-F 0 "R?" H 1900 4250 50  0000 C CNN
-F 1 "R" V 2050 4250 50  0001 C CNN
-	1    2050 4250
-	1    0    0    -1  
-$EndComp
-Text Notes 1050 3700 0    60   ~ 0
-FORD TRANSIT VAN
-Text Notes 1050 3600 0    60   ~ 0
-ACCELERATOR PEDAL
-$Comp
-L POT RV?
-U 1 1 4A7BE179
-P 2050 4800
-F 0 "RV?" V 2050 4650 50  0000 C CNN
-F 1 "POT" H 2050 4800 50  0001 C CNN
-	1    2050 4800
-	0    -1   1    0   
-$EndComp
-$Comp
-L R Rvn
-U 1 1 4A7BC582
-P 2600 2650
-F 0 "Rvn" H 2450 2650 50  0000 C CNN
-F 1 "R" V 2600 2650 50  0001 C CNN
-	1    2600 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L R RO
-U 1 1 4A7BC57F
-P 3100 2100
-F 0 "RO" V 3180 2100 50  0000 C CNN
-F 1 "R" V 3100 2100 50  0001 C CNN
-	1    3100 2100
-	0    1    1    0   
-$EndComp
-$Comp
-L POT RP
-U 1 1 4A7BC57B
-P 2600 2100
-F 0 "RP" V 2600 1950 50  0000 C CNN
-F 1 "POT" H 2600 2100 50  0001 C CNN
-	1    2600 2100
-	0    1    1    0   
-$EndComp
-$Comp
-L R Rvp
-U 1 1 4A7BC56F
-P 2600 1550
-F 0 "Rvp" H 2450 1550 50  0000 C CNN
-F 1 "R" V 2600 1550 50  0001 C CNN
-	1    2600 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L R Rvn
-U 1 1 4A7BC544
-P 1250 2650
-F 0 "Rvn" H 1100 2650 50  0000 C CNN
-F 1 "R" V 1250 2650 50  0001 C CNN
-	1    1250 2650
-	1    0    0    -1  
-$EndComp
-Text Notes 1700 2000 0    60   ~ 0
-PIN 4 (Vout)
-Text Notes 3050 2000 0    60   ~ 0
-PIN 6 (Vout)
-Text Notes 2400 3050 0    60   ~ 0
-PIN 5 (0V)
-Text Notes 1050 3050 0    60   ~ 0
-PIN 3 (0V)
-Text Notes 2400 1250 0    60   ~ 0
-PIN 1 (5V)
-Text Notes 1050 1250 0    60   ~ 0
-PIN 2 (5V)
-$Comp
-L R RO
-U 1 1 4A7BC37A
-P 1750 2100
-F 0 "RO" V 1830 2100 50  0000 C CNN
-F 1 "R" V 1750 2100 50  0001 C CNN
-	1    1750 2100
-	0    1    1    0   
-$EndComp
-$Comp
-L R Rvp
-U 1 1 4A7BC358
-P 1250 1550
-F 0 "Rvp" H 1100 1550 50  0000 C CNN
-F 1 "R" V 1250 1550 50  0001 C CNN
-	1    1250 1550
-	1    0    0    -1  
-$EndComp
-Text Notes 1050 1000 0    60   ~ 0
-2003 VW POLO
-Text Notes 1050 900  0    60   ~ 0
-ACCELERATOR PEDAL
-$Comp
-L POT RP
-U 1 1 4A7B9A0B
-P 1250 2100
-F 0 "RP" V 1250 1950 50  0000 C CNN
-F 1 "POT" H 1250 2100 50  0001 C CNN
-	1    1250 2100
-	0    1    1    0   
-$EndComp
+Text GLabel 2250 1050 2    60   Output ~ 0
+IGN_3V3
+Text GLabel 10100 5950 0    60   Output ~ 0
+spare_E14
+Text GLabel 10100 5850 0    60   Output ~ 0
+spare_E01
+Text GLabel 10100 5750 0    60   Output ~ 0
+spare_E00
+Text GLabel 2250 1200 2    60   Output ~ 0
+START_3V3
+Text GLabel 2250 1350 2    60   Output ~ 0
+FWD_3V3
+Text GLabel 2250 1500 2    60   Output ~ 0
+BRAKE_DI_3V3
+Text GLabel 10100 4750 0    60   Output ~ 0
+spare_D02
+Text GLabel 10100 5150 0    60   Output ~ 0
+spare_D09
+Text GLabel 10100 5350 0    60   Output ~ 0
+spare_D12
+Text GLabel 10100 5050 0    60   Output ~ 0
+spare_D08
+Text GLabel 10100 4950 0    60   Output ~ 0
+spare_D07
+Text GLabel 10100 5550 0    60   Output ~ 0
+spare_D15
+Text GLabel 10100 5450 0    60   Output ~ 0
+spare_D14
+Text GLabel 10100 4550 0    60   Output ~ 0
+spare_C08
+Text GLabel 10100 4650 0    60   Output ~ 0
+spare_C09
+Text GLabel 10100 4050 0    60   Output ~ 0
+spare_B12
+Text GLabel 10100 4150 0    60   Output ~ 0
+spare_B13
+Text GLabel 10100 4350 0    60   Output ~ 0
+spare_B15
+Text GLabel 10100 4250 0    60   Output ~ 0
+spare_B14
+Text GLabel 10100 3750 0    60   Output ~ 0
+spare_B07
+Text GLabel 10100 3850 0    60   Output ~ 0
+spare_B11
+Text GLabel 10100 3650 0    60   Output ~ 0
+spare_B06
+Text GLabel 10100 3550 0    60   Output ~ 0
+spare_B05
+Text GLabel 2250 2100 2    60   Input ~ 0
+FAULT_LED_3V3
+Text GLabel 2250 1950 2    60   Input ~ 0
+RUN_LED_3V3
+Text GLabel 2250 1800 2    60   Output ~ 0
+REV_3V3
+Text GLabel 2250 1650 2    60   Output ~ 0
+CRAWL_3V3
 $EndSCHEMATC

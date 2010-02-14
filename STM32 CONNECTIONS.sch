@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun Feb 14 14:04:07 2010
+EESchema Schematic File Version 2  date Sun Feb 14 23:24:34 2010
 LIBS:power
 LIBS:STM32MCU
 LIBS:device
@@ -35,7 +35,7 @@ LIBS:STM32MCU-cache
 EELAYER 24  0
 EELAYER END
 $Descr A4 11700 8267
-Sheet 5 5
+Sheet 7 7
 Title "STM32 CONNECTIONS"
 Date "7 feb 2010"
 Rev "_A"
@@ -46,13 +46,67 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
+	9700 6350 9900 6350
+Connection ~ 8700 6250
+Wire Wire Line
+	8700 6350 8700 6000
+Connection ~ 8150 6000
+Wire Wire Line
+	8200 6000 8150 6000
+Wire Wire Line
+	8150 6050 8150 5600
+Connection ~ 7300 5700
+Wire Wire Line
+	7400 5800 7300 5800
+Wire Wire Line
+	8100 5800 8100 5850
+Connection ~ 1350 3100
+Wire Wire Line
+	1550 3100 1250 3100
+Connection ~ 2200 3000
+Wire Wire Line
+	2200 3100 2200 2850
+Wire Wire Line
+	2200 3100 2050 3100
+Connection ~ 8750 1350
+Wire Wire Line
+	8450 1350 10100 1350
+Wire Wire Line
+	8450 1350 8450 1300
+Connection ~ 10100 850 
+Wire Wire Line
+	10350 850  9700 850 
+Wire Wire Line
+	8750 900  8750 850 
+Connection ~ 9800 850 
+Wire Wire Line
+	9800 850  9800 900 
+Connection ~ 10000 1350
+Wire Wire Line
+	10000 1400 10000 1350
+Connection ~ 9800 1350
+Wire Wire Line
+	8750 1350 8750 1300
+Wire Wire Line
+	10100 1350 10100 1300
+Wire Wire Line
+	9800 1350 9800 1300
+Connection ~ 10550 2750
+Wire Wire Line
+	10550 2750 10650 2750
+Connection ~ 10550 3150
+Wire Wire Line
+	10550 3150 10650 3150
+Wire Wire Line
+	10550 3450 10550 2550
+Wire Wire Line
+	10550 2550 10650 2550
+Wire Wire Line
+	10650 3050 10500 3050
+Wire Wire Line
+	10650 2650 10500 2650
+Wire Wire Line
 	7100 4050 7000 4050
-Text GLabel 7100 4050 2    60   Input ~ 0
-spare_E14
-Text GLabel 7100 2650 2    60   Input ~ 0
-spare_E00
-Text GLabel 7100 2750 2    60   Input ~ 0
-spare_E01
 Wire Wire Line
 	7100 2650 7000 2650
 Wire Wire Line
@@ -249,10 +303,6 @@ Connection ~ 2350 5750
 Connection ~ 2350 6450
 Wire Wire Line
 	1700 6450 1850 6450
-Wire Wire Line
-	1350 3100 1250 3100
-Wire Wire Line
-	7400 5550 7000 5550
 Connection ~ 4300 6250
 Wire Wire Line
 	4300 6350 4400 6350
@@ -285,9 +335,9 @@ Wire Wire Line
 	10250 5900 10250 5950
 Connection ~ 10000 5250
 Wire Wire Line
-	10250 5250 10250 5300
+	10250 5300 10250 5250
 Wire Wire Line
-	10000 5350 10000 5250
+	10000 5250 10000 5350
 Connection ~ 10250 5250
 Wire Wire Line
 	10000 5950 10000 5850
@@ -320,13 +370,9 @@ Wire Wire Line
 	4300 6050 4300 6450
 Connection ~ 4300 6350
 Wire Wire Line
-	8200 5700 7900 5700
-Wire Wire Line
-	7900 5700 7900 5550
+	7900 5700 8200 5700
 Wire Wire Line
 	8200 5600 8100 5600
-Wire Wire Line
-	8100 5800 8200 5800
 Wire Wire Line
 	1550 3000 1250 3000
 Wire Wire Line
@@ -453,8 +499,6 @@ Wire Wire Line
 Wire Wire Line
 	1250 1100 1550 1100
 Wire Wire Line
-	2200 3000 2200 2850
-Wire Wire Line
 	2200 2850 4400 2850
 Wire Wire Line
 	3600 2350 4400 2350
@@ -463,7 +507,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 3050 2950 3050
 Wire Wire Line
-	2950 2950 3100 2950
+	3100 2950 2950 2950
 Wire Wire Line
 	2950 3050 2950 2250
 Connection ~ 2950 2450
@@ -507,6 +551,214 @@ Wire Wire Line
 	7000 1850 7100 1850
 Wire Wire Line
 	7100 2350 7000 2350
+Wire Wire Line
+	10500 2450 10650 2450
+Wire Wire Line
+	10500 2850 10650 2850
+Wire Wire Line
+	10500 3250 10650 3250
+Wire Wire Line
+	10550 3350 10650 3350
+Connection ~ 10550 3350
+Wire Wire Line
+	10550 2950 10650 2950
+Connection ~ 10550 2950
+Wire Wire Line
+	10100 900  10100 850 
+Wire Wire Line
+	9300 1350 9300 1150
+Connection ~ 9300 1350
+Wire Wire Line
+	8450 850  8450 900 
+Connection ~ 8750 850 
+Wire Wire Line
+	8350 850  8900 850 
+Connection ~ 8450 850 
+Wire Wire Line
+	1350 3150 1350 3100
+Connection ~ 8150 5600
+Wire Wire Line
+	7300 5700 7400 5700
+Wire Wire Line
+	8200 5800 7900 5800
+Connection ~ 8100 5800
+Wire Wire Line
+	7300 5800 7300 5550
+Wire Wire Line
+	7300 5550 7000 5550
+Wire Wire Line
+	8150 6450 8000 6450
+Wire Wire Line
+	8000 6450 8000 5700
+Connection ~ 8000 5700
+Wire Wire Line
+	8700 6250 8450 6250
+Wire Wire Line
+	9300 6350 9200 6350
+$Comp
+L DIODE D?
+U 1 1 4B77841E
+P 9500 6350
+F 0 "D?" H 9500 6450 40  0000 C CNN
+F 1 "DIODE" H 9500 6250 40  0000 C CNN
+	1    9500 6350
+	1    0    0    -1  
+$EndComp
+Text GLabel 9900 6350 2    60   Input ~ 0
+BOOT_0
+$Comp
+L R R?
+U 1 1 4B7783DC
+P 8950 6350
+F 0 "R?" V 9030 6350 50  0000 C CNN
+F 1 "22k" V 8950 6350 50  0000 C CNN
+	1    8950 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 4B7783C8
+P 8450 6000
+F 0 "R?" V 8530 6000 50  0000 C CNN
+F 1 "100k" V 8450 6000 50  0000 C CNN
+	1    8450 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L PNP Q?
+U 1 1 4B77839B
+P 8250 6250
+F 0 "Q?" H 8400 6250 60  0000 C CNN
+F 1 "PNP" H 8154 6400 60  0000 C CNN
+	1    8250 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 4B7782E1
+P 7650 5700
+F 0 "R?" V 7550 5700 50  0000 C CNN
+F 1 "10k" V 7650 5700 50  0000 C CNN
+	1    7650 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 4B778258
+P 1800 3100
+F 0 "R?" V 1900 3100 50  0000 C CNN
+F 1 "100k" V 1800 3100 50  0000 C CNN
+	1    1800 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 4B778076
+P 8350 850
+F 0 "#PWR?" H 8350 940 20  0001 C CNN
+F 1 "+5V" H 8350 940 30  0000 C CNN
+	1    8350 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 4B77718A
+P 8450 1100
+F 0 "C?" H 8500 1200 50  0000 L CNN
+F 1 "470u" H 8500 1000 50  0000 L CNN
+	1    8450 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR?
+U 1 1 4B777152
+P 9300 4450
+F 0 "#PWR?" H 9300 4550 40  0001 C CNN
+F 1 "VDD" H 9400 4500 40  0000 C CNN
+	1    9300 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR?
+U 1 1 4B77714B
+P 10350 850
+F 0 "#PWR?" H 10350 950 40  0001 C CNN
+F 1 "VDD" H 10450 900 40  0000 C CNN
+	1    10350 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4B7770D2
+P 8750 1100
+F 0 "C?" H 8800 1200 50  0000 L CNN
+F 1 "10n" H 8800 1000 50  0000 L CNN
+	1    8750 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4B7770D1
+P 9800 1100
+F 0 "C?" H 9850 1200 50  0000 L CNN
+F 1 "100n" H 9850 1000 50  0000 L CNN
+	1    9800 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 4B7770D0
+P 10100 1100
+F 0 "C?" H 10150 1200 50  0000 L CNN
+F 1 "10u" H 10150 1000 50  0000 L CNN
+	1    10100 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7805 U?
+U 1 1 4B77700D
+P 9300 900
+F 0 "U?" H 9450 704 60  0000 C CNN
+F 1 "LD29150DT33R" H 9300 1100 60  0000 C CNN
+F 2 "DPAK" H 9300 900 60  0001 C CNN
+F 4 "497-1496-1-ND" H 9300 900 60  0001 C CNN "Digikey"
+	1    9300 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L DGND #PWR?
+U 1 1 4B775C86
+P 10550 3450
+F 0 "#PWR?" H 10550 3450 40  0001 C CNN
+F 1 "DGND" H 10550 3380 40  0000 C CNN
+	1    10550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_10 P?
+U 1 1 4B775C22
+P 11000 2900
+F 0 "P?" V 10950 2900 60  0000 C CNN
+F 1 "CONN_10" V 11050 2900 60  0000 C CNN
+	1    11000 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 10500 2450 0    60   Input ~ 0
+TRACE_CK
+Text GLabel 10500 2650 0    60   Input ~ 0
+TRACE_D0
+Text GLabel 10500 2850 0    60   Input ~ 0
+TRACE_D1
+Text GLabel 10500 3050 0    60   Input ~ 0
+TRACE_D2
+Text GLabel 10500 3250 0    60   Input ~ 0
+TRACE_D3
+Text GLabel 7100 4050 2    60   Input ~ 0
+spare_E14
+Text GLabel 7100 2650 2    60   Input ~ 0
+spare_E00
+Text GLabel 7100 2750 2    60   Input ~ 0
+spare_E01
 Text GLabel 7100 2450 2    60   Input ~ 0
 spare_D15
 Text GLabel 7100 2350 2    60   Input ~ 0
@@ -882,15 +1134,6 @@ F 1 "BEAD" V 9700 4350 40  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 3V3 #PWR?
-U 1 1 4A796A7D
-P 9300 4450
-F 0 "#PWR?" H 9300 4550 40  0001 C CNN
-F 1 "3V3" H 9300 4599 40  0000 C CNN
-	1    9300 4450
-	1    0    0    -1  
-$EndComp
-$Comp
 L VDD #PWR?
 U 1 1 4A7969B2
 P 8100 4550
@@ -1103,11 +1346,11 @@ $EndComp
 $Comp
 L DGND #PWR?
 U 1 1 4A78FB9C
-P 1350 3100
-F 0 "#PWR?" H 1350 3100 40  0001 C CNN
-F 1 "DGND" V 1350 2950 40  0000 C CNN
-	1    1350 3100
-	0    -1   -1   0   
+P 1350 3150
+F 0 "#PWR?" H 1350 3150 40  0001 C CNN
+F 1 "DGND" V 1350 3000 40  0000 C CNN
+	1    1350 3150
+	1    0    0    -1  
 $EndComp
 $Comp
 L VDD #PWR?
@@ -1148,11 +1391,11 @@ $EndComp
 $Comp
 L DGND #PWR?
 U 1 1 4A78F06C
-P 8100 5800
-F 0 "#PWR?" H 8100 5800 40  0001 C CNN
-F 1 "DGND" H 8100 5730 40  0000 C CNN
-	1    8100 5800
-	0    1    1    0   
+P 8100 5850
+F 0 "#PWR?" H 8100 5850 40  0001 C CNN
+F 1 "DGND" H 8100 5780 40  0000 C CNN
+	1    8100 5850
+	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_3 J?
@@ -1166,10 +1409,10 @@ $EndComp
 $Comp
 L R R?
 U 1 1 4A78F033
-P 7650 5550
-F 0 "R?" V 7730 5550 50  0000 C CNN
-F 1 "10K" V 7650 5550 50  0000 C CNN
-	1    7650 5550
+P 7650 5800
+F 0 "R?" V 7730 5800 50  0000 C CNN
+F 1 "100k" V 7650 5800 50  0000 C CNN
+	1    7650 5800
 	0    1    1    0   
 $EndComp
 $Comp
