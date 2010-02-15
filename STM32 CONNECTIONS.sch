@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun Feb 14 23:24:34 2010
+EESchema Schematic File Version 2  date Mon Feb 15 23:56:23 2010
 LIBS:power
 LIBS:STM32MCU
 LIBS:device
@@ -30,7 +30,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:STM32MCUsch
 LIBS:STM32MCU-cache
 EELAYER 24  0
 EELAYER END
@@ -39,12 +38,21 @@ Sheet 7 7
 Title "STM32 CONNECTIONS"
 Date "7 feb 2010"
 Rev "_A"
-Comp "TUMANAKO - ELECTRIC VEHICLE MOTOR INVERTER - (c) EHC"
-Comment1 ""
+Comp "Tumanako"
+Comment1 "(c) Edward Cheeseman 2010"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L DGND #PWR?
+U 1 1 4B79270E
+P 10000 1400
+F 0 "#PWR?" H 10000 1400 40  0001 C CNN
+F 1 "DGND" H 10000 1330 40  0000 C CNN
+	1    10000 1400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	9700 6350 9900 6350
 Connection ~ 8700 6250

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun Feb 14 23:24:34 2010
+EESchema Schematic File Version 2  date Mon Feb 15 23:56:23 2010
 LIBS:power
 LIBS:STM32MCU
 LIBS:device
@@ -30,17 +30,16 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:STM32MCUsch
 LIBS:STM32MCU-cache
 EELAYER 24  0
 EELAYER END
 $Descr A4 11700 8267
-Sheet 4 7
+Sheet 6 7
 Title "STM32 CONNECTIONS"
 Date "7 feb 2010"
 Rev "_A"
-Comp "TUMANAKO - ELECTRIC VEHICLE MOTOR INVERTER - (c) EHC"
-Comment1 ""
+Comp "Tumanako"
+Comment1 "(c) Edward Cheeseman 2010"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -482,10 +481,10 @@ $EndComp
 $Comp
 L +15V #PWR?
 U 1 1 4B774954
-P 5450 1550
-F 0 "#PWR?" H 5500 1500 20  0001 C CNN
-F 1 "+15V" H 5450 1650 30  0000 C CNN
-	1    5450 1550
+P 5300 1550
+F 0 "#PWR?" H 5350 1500 20  0001 C CNN
+F 1 "+15V" H 5300 1650 30  0000 C CNN
+	1    5300 1550
 	0    1    1    0   
 $EndComp
 $Comp
@@ -527,10 +526,10 @@ $EndComp
 $Comp
 L +15V #PWR?
 U 1 1 4B7748A6
-P 5450 600
-F 0 "#PWR?" H 5500 550 20  0001 C CNN
-F 1 "+15V" H 5450 700 30  0000 C CNN
-	1    5450 600 
+P 5450 750
+F 0 "#PWR?" H 5500 700 20  0001 C CNN
+F 1 "+15V" H 5450 850 30  0000 C CNN
+	1    5450 750 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -663,10 +662,10 @@ $EndComp
 $Comp
 L +15V #PWR12
 U 1 1 4AEB9ECD
-P 5200 4450
-F 0 "#PWR12" H 5250 4400 20  0001 C CNN
-F 1 "+15V" H 5200 4550 30  0000 C CNN
-	1    5200 4450
+P 5200 4600
+F 0 "#PWR12" H 5250 4550 20  0001 C CNN
+F 1 "+15V" H 5200 4700 30  0000 C CNN
+	1    5200 4600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1107,10 +1106,10 @@ $EndComp
 $Comp
 L +15V #PWR15
 U 1 1 4AEB7736
-P 9600 5900
-F 0 "#PWR15" H 9650 5850 20  0001 C CNN
-F 1 "+15V" H 9600 6000 30  0000 C CNN
-	1    9600 5900
+P 9750 5900
+F 0 "#PWR15" H 9800 5850 20  0001 C CNN
+F 1 "+15V" H 9750 6000 30  0000 C CNN
+	1    9750 5900
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1134,19 +1133,19 @@ $EndComp
 $Comp
 L +15V #PWR5
 U 1 1 4AEB687D
-P 9600 2300
-F 0 "#PWR5" H 9650 2250 20  0001 C CNN
-F 1 "+15V" H 9600 2400 30  0000 C CNN
-	1    9600 2300
+P 9750 2300
+F 0 "#PWR5" H 9800 2250 20  0001 C CNN
+F 1 "+15V" H 9750 2400 30  0000 C CNN
+	1    9750 2300
 	0    -1   -1   0   
 $EndComp
 $Comp
 L +15V #PWR1
 U 1 1 4AEB6834
-P 7100 600
-F 0 "#PWR1" H 7150 550 20  0001 C CNN
-F 1 "+15V" H 7100 700 30  0000 C CNN
-	1    7100 600 
+P 7100 750
+F 0 "#PWR1" H 7150 700 20  0001 C CNN
+F 1 "+15V" H 7100 850 30  0000 C CNN
+	1    7100 750 
 	1    0    0    -1  
 $EndComp
 $Comp

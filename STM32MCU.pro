@@ -1,4 +1,4 @@
-update=Sat Feb 13 13:15:17 2010
+update=Mon Feb 15 21:28:59 2010
 last_client=eeschema
 [general]
 version=1
@@ -69,4 +69,3 @@ LibName28=opto
 LibName29=atmel
 LibName30=contrib
 LibName31=valves
-LibName32=STM32MCUsch
