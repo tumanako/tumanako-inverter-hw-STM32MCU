@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu Feb 18 22:28:23 2010
+EESchema Schematic File Version 2  date Sat Feb 20 00:02:52 2010
 LIBS:power
 LIBS:STM32MCU
 LIBS:device
@@ -45,14 +45,26 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L +12V #PWR?
-U 1 1 4B7D0580
-P 8350 1700
-F 0 "#PWR?" H 8350 1650 20  0001 C CNN
-F 1 "+12V" H 8350 1800 30  0000 C CNN
-	1    8350 1700
+L LINK J?
+U 1 1 4B7E6456
+P 7300 4750
+F 0 "J?" H 7350 4800 60  0000 C CNN
+F 1 "LINK" H 7400 4700 60  0000 C CNN
+	1    7300 4750
 	1    0    0    -1  
 $EndComp
+$Comp
+L AGND #PWR?
+U 1 1 4B7E636F
+P 7200 4800
+F 0 "#PWR?" H 7200 4800 40  0001 C CNN
+F 1 "AGND" H 7200 4730 50  0000 C CNN
+	1    7200 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 7200 4750
+Wire Wire Line
+	7300 4750 7000 4750
 Wire Wire Line
 	8450 2200 9950 2200
 Wire Wire Line
@@ -246,9 +258,7 @@ Wire Wire Line
 	4300 4650 4400 4650
 Connection ~ 7100 4750
 Wire Wire Line
-	7200 4800 7200 4750
-Wire Wire Line
-	7200 4750 7000 4750
+	7200 4750 7200 4800
 Connection ~ 5950 7400
 Wire Wire Line
 	6050 7400 4750 7400
@@ -631,6 +641,19 @@ Wire Wire Line
 Connection ~ 8450 1700
 Wire Wire Line
 	9950 2200 9950 2250
+Wire Wire Line
+	7650 4800 7650 4750
+Wire Wire Line
+	7650 4750 7500 4750
+$Comp
+L +12V #PWR?
+U 1 1 4B7D0580
+P 8350 1700
+F 0 "#PWR?" H 8350 1650 20  0001 C CNN
+F 1 "+12V" H 8350 1800 30  0000 C CNN
+	1    8350 1700
+	1    0    0    -1  
+$EndComp
 $Comp
 L DGND #PWR?
 U 1 1 4B7D0565
@@ -1185,7 +1208,7 @@ L DGND #PWR?
 U 1 1 4A796BAE
 P 10050 5150
 F 0 "#PWR?" H 10050 5150 40  0001 C CNN
-F 1 "DGND" H 10050 5080 40  0000 C CNN
+F 1 "AGND" H 10050 5080 40  0000 C CNN
 	1    10050 5150
 	1    0    0    -1  
 $EndComp
@@ -1294,10 +1317,10 @@ U_Curr_3V3
 $Comp
 L DGND #PWR?
 U 1 1 4A796429
-P 7200 4800
-F 0 "#PWR?" H 7200 4800 40  0001 C CNN
-F 1 "DGND" H 7200 4730 40  0000 C CNN
-	1    7200 4800
+P 7650 4800
+F 0 "#PWR?" H 7650 4800 40  0001 C CNN
+F 1 "DGND" H 7650 4730 40  0000 C CNN
+	1    7650 4800
 	1    0    0    -1  
 $EndComp
 $Comp
