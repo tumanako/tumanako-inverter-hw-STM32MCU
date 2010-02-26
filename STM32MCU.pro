@@ -1,4 +1,4 @@
-update=Wed Feb 24 18:23:35 2010
+update=Sat Feb 27 08:22:41 2010
 last_client=pcbnew
 [general]
 version=1
@@ -69,6 +69,11 @@ LibName28=opto
 LibName29=atmel
 LibName30=contrib
 LibName31=valves
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [pcbnew]
 version=1
 PadDrlX=320
@@ -96,7 +101,7 @@ TxtLar=120
 MSegLar=150
 WpenSer=10
 [pcbnew/libraries]
-LibDir=/Library/kicad/share/modules
+LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -107,3 +112,4 @@ LibName7=display
 LibName8=valves
 LibName9=led
 LibName10=dip_sockets
+LibName11=STM32MCU
