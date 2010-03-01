@@ -1,5 +1,4 @@
-EESchema Schematic File Version 2  date Mon Mar  1 00:25:17 2010
-LIBS:STM32MCU-cache
+EESchema Schematic File Version 2  date Mon Mar  1 22:52:19 2010
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:STM32MCU
+LIBS:STM32MCU-cache
 EELAYER 24  0
 EELAYER END
 $Descr A4 11700 8267
