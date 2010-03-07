@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun Mar  7 11:32:27 2010
+EESchema Schematic File Version 2  date 7/03/2010 10:23:44 p.m.
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,13 +30,12 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:STM32MCU
-LIBS:STM32MCU-cache
 EELAYER 24  0
 EELAYER END
 $Descr A4 11700 8267
 Sheet 6 7
 Title "STM32 CONNECTIONS"
-Date "6 mar 2010"
+Date "7 mar 2010"
 Rev "_A"
 Comp "Tumanako"
 Comment1 "(c) Edward Cheeseman 2010"
@@ -44,6 +43,13 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 7000 3775
+Wire Wire Line
+	7175 3775 7000 3775
+Connection ~ 9850 2200
+Connection ~ 9850 5625
+Wire Wire Line
+	9050 5625 9950 5625
 Connection ~ 1450 1000
 Wire Wire Line
 	1450 1000 1650 1000
@@ -123,8 +129,6 @@ Wire Wire Line
 Wire Wire Line
 	6975 5625 6975 5575
 Wire Wire Line
-	6975 3825 6975 3775
-Wire Wire Line
 	6675 4025 6625 4025
 Wire Wire Line
 	6675 4925 6625 4925
@@ -200,8 +204,6 @@ Wire Wire Line
 Wire Wire Line
 	9950 5725 9750 5725
 Wire Wire Line
-	9950 5625 9850 5625
-Wire Wire Line
 	8000 2350 7900 2350
 Wire Wire Line
 	7900 1650 8000 1650
@@ -269,7 +271,7 @@ Wire Wire Line
 	7100 2250 7100 750 
 Connection ~ 7100 850 
 Wire Wire Line
-	9850 2300 9850 2200
+	9850 2200 9850 2300
 Wire Wire Line
 	9850 2100 9850 2000
 Wire Wire Line
@@ -309,7 +311,7 @@ Connection ~ 9850 5525
 Wire Wire Line
 	9850 2000 9950 2000
 Wire Wire Line
-	9850 2200 9950 2200
+	9950 2200 8950 2200
 Wire Wire Line
 	9950 2100 9750 2100
 Connection ~ 9850 6525
@@ -511,6 +513,27 @@ Wire Wire Line
 Connection ~ 1450 3250
 Wire Wire Line
 	1450 950  1450 1100
+Wire Wire Line
+	7000 3750 7000 3780
+Wire Wire Line
+	7000 3780 6975 3780
+Wire Wire Line
+	6975 3780 6975 3825
+Wire Wire Line
+	7325 800  7100 800 
+Connection ~ 7100 800 
+Text Label 7175 3775 0    60   ~ 0
++15V
+Text Label 4075 1900 0    60   ~ 0
++15V
+Text Label 3850 950  0    60   ~ 0
++15V
+Text Label 7325 800  0    60   ~ 0
++15V
+Text Label 8950 2200 0    60   ~ 0
++15V
+Text Label 9050 5625 0    60   ~ 0
++15V
 $Comp
 L DIODESCH D202
 U 1 1 4B8A39B2
@@ -797,10 +820,10 @@ $EndComp
 $Comp
 L +15V #PWR063
 U 1 1 4B774954
-P 4700 1900
-F 0 "#PWR063" H 4750 1850 20  0001 C CNN
-F 1 "+15V" H 4700 2000 30  0000 C CNN
-	1    4700 1900
+P 4850 1900
+F 0 "#PWR063" H 4900 1850 20  0001 C CNN
+F 1 "+15V" H 4850 2000 30  0000 C CNN
+	1    4850 1900
 	0    1    1    0   
 $EndComp
 $Comp
@@ -844,10 +867,10 @@ $EndComp
 $Comp
 L +15V #PWR065
 U 1 1 4B7748A6
-P 4800 950
-F 0 "#PWR065" H 4850 900 20  0001 C CNN
-F 1 "+15V" H 4800 1050 30  0000 C CNN
-	1    4800 950 
+P 4800 800
+F 0 "#PWR065" H 4850 750 20  0001 C CNN
+F 1 "+15V" H 4800 900 30  0000 C CNN
+	1    4800 800 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -987,10 +1010,10 @@ $EndComp
 $Comp
 L +15V #PWR067
 U 1 1 4AEB9ECD
-P 6975 3775
-F 0 "#PWR067" H 7025 3725 20  0001 C CNN
-F 1 "+15V" H 6975 3875 30  0000 C CNN
-	1    6975 3775
+P 7000 3600
+F 0 "#PWR067" H 7050 3550 20  0001 C CNN
+F 1 "+15V" H 7000 3700 30  0000 C CNN
+	1    7000 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1371,10 +1394,10 @@ $EndComp
 $Comp
 L +15V #PWR075
 U 1 1 4AEB7736
-P 9750 5725
-F 0 "#PWR075" H 9800 5675 20  0001 C CNN
-F 1 "+15V" H 9750 5825 30  0000 C CNN
-	1    9750 5725
+P 9600 5725
+F 0 "#PWR075" H 9650 5675 20  0001 C CNN
+F 1 "+15V" H 9600 5825 30  0000 C CNN
+	1    9600 5725
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1398,19 +1421,19 @@ $EndComp
 $Comp
 L +15V #PWR078
 U 1 1 4AEB687D
-P 9750 2300
-F 0 "#PWR078" H 9800 2250 20  0001 C CNN
-F 1 "+15V" H 9750 2400 30  0000 C CNN
-	1    9750 2300
+P 9600 2300
+F 0 "#PWR078" H 9650 2250 20  0001 C CNN
+F 1 "+15V" H 9600 2400 30  0000 C CNN
+	1    9600 2300
 	0    -1   -1   0   
 $EndComp
 $Comp
 L +15V #PWR079
 U 1 1 4AEB6834
-P 7100 750
-F 0 "#PWR079" H 7150 700 20  0001 C CNN
-F 1 "+15V" H 7100 850 30  0000 C CNN
-	1    7100 750 
+P 7100 600
+F 0 "#PWR079" H 7150 550 20  0001 C CNN
+F 1 "+15V" H 7100 700 30  0000 C CNN
+	1    7100 600 
 	1    0    0    -1  
 $EndComp
 $Comp
