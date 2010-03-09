@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 8/03/2010 11:11:20 p.m.
+EESchema Schematic File Version 2  date 9/03/2010 10:02:15 p.m.
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,7 +36,7 @@ EELAYER END
 $Descr A4 11700 8267
 Sheet 7 7
 Title "STM32 CONNECTIONS"
-Date "8 mar 2010"
+Date "9 mar 2010"
 Rev "_A"
 Comp "Tumanako"
 Comment1 "(c) Edward Cheeseman 2010"
